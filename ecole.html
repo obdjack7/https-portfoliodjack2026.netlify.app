@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>École — Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .epreuve-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow .25s, transform .25s;
+    }
+    .epreuve-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    .epreuve-card-header {
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent2) 100%);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .epreuve-num {
+      background: rgba(255,255,255,.25);
+      color: #fff;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-family: var(--mono);
+    }
+    .epreuve-card-header h2 {
+      color: #fff;
+      border: none;
+      padding: 0; margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .epreuve-body {
+      padding: 1.25rem 1.5rem;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .info-item {
+      background: var(--bg2);
+      border-radius: var(--radius-sm);
+      padding: .7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .info-label {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .info-value {
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .ep-code {
+      background: var(--accent-glow);
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 50px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    @media (max-width: 600px) {
+      .info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="ecole.html" class="active">École</a></li>
+    <li><a href="entreprises.html">Entreprises</a></li>
+    <li><a href="projet.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Mon École</h1>
+
+<!-- ORGANISME -->
+<section>
+  <h2>Mon organisme de formation</h2>
+  <div class="epreuve-card">
+    <div class="epreuve-card-header" style="background: linear-gradient(90deg, #1e3a8a 0%, #3b5bdb 100%);">
+      <span class="epreuve-num">🏫</span>
+      <h2>Groupe Gift — IAGG &amp; Élysées Apprentissage</h2>
+    </div>
+    <div class="epreuve-body">
+      <p>
+        Le <strong>Groupe Gift</strong> est la structure faîtière qui englobe plusieurs établissements
+        d'enseignement et de formation, dont <strong>IAGG</strong> et
+        <strong>Élysées Apprentissage</strong> (Paris 15ᵉ). Ce sont ces deux écoles qui ont
+        assuré le suivi pédagogique et l'encadrement de mon BTS SIO en alternance.
+      </p>
+      <p>
+        Le groupe est une société de conseil en affaires et gestion, basée au
+        <strong>64 Bis Rue La Boétie, 75008 Paris</strong>, créée en 1993 et dirigée par
+        M. Albert Benamran. Il compte une quarantaine d'entités et une vingtaine de collaborateurs.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">Établissement principal</span>
+          <span class="info-value">IAAG</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Groupe</span>
+          <span class="info-value">Groupe Gift (IAGG &amp; affiliés)</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Adresse siège</span>
+          <span class="info-value">64 bis rue La Boétie, 75008 Paris</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Fondé en</span>
+          <span class="info-value">1993 · dirigé par M. Albert Benamran</span>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;">
+        <span class="badge">Organisme de formation</span>
+        <span class="badge">IAGG</span>
+        <span class="badge">Élysées Apprentissage</span>
+        <span class="badge">Alternance BTS SIO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÉPREUVES SIMPLIFIÉES -->
+<section>
+  <h2>Épreuves BTS SIO — Session 2026</h2>
+
+  <div class="epreuve-card">
+    <div class="epreuve-body" style="padding:1.5rem;">
+
+      <!-- Liste des épreuves — noms uniquement -->
+      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.5rem;">
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E1</span>
+          <span style="font-size:.9rem;color:var(--text);">Culture générale et expression</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E2</span>
+          <span style="font-size:.9rem;color:var(--text);">Anglais</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E3</span>
+          <span style="font-size:.9rem;color:var(--text);">Mathématiques pour l'informatique</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E4</span>
+          <span style="font-size:.9rem;color:var(--text);">Culture économique, juridique et managériale</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E5</span>
+          <span style="font-size:.9rem;color:var(--text);">Support et mise à disposition de services</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E6</span>
+          <span style="font-size:.9rem;color:var(--text);">Administration des systèmes et des réseaux</span>
+        </li>
+        <li style="display:flex;align-items:center;gap:10px;padding:.5rem .75rem;background:var(--bg2);border-radius:var(--radius-sm);">
+          <span class="ep-code">E7</span>
+          <span style="font-size:.9rem;color:var(--text);">Cybersécurité des services informatiques</span>
+        </li>
+      </ul>
+
+      <!-- Documents téléchargeables -->
+      <div style="padding-top:1.25rem;border-top:1px solid var(--border);">
+        <h3 style="font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.75rem;">📄 Documents téléchargeables</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <a href="documents/TABLEAU_E5.pdf" download style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--accent);color:#fff;border-radius:50px;font-size:.85rem;font-weight:600;text-decoration:none;box-shadow:0 2px 12px rgba(59,91,219,.3);">📥 Tableau E5 (.pdf)</a>
+          <a href="documents/FICHE SYSTEME.pdf" download style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--accent);color:#fff;border-radius:50px;font-size:.85rem;font-weight:600;text-decoration:none;box-shadow:0 2px 12px rgba(59,91,219,.3);">📥 Fiche système (.pdf)</a>
+          <a href="documents/FICHE RESEAU.pdf" download style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--accent);color:#fff;border-radius:50px;font-size:.85rem;font-weight:600;text-decoration:none;box-shadow:0 2px 12px rgba(59,91,219,.3);">📥 Fiche réseau (.pdf)</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Portfolio BTS SIO · OUATTARA DJACK</p>
+</footer>
+
+</body>
+</html>

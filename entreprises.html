@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entreprises — Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .entreprise-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .entreprise-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow .25s, transform .25s;
+    }
+    .entreprise-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    .entreprise-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: .85rem;
+    }
+    .entreprise-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+    .status-ok {
+      background: #d3f9d8;
+      color: #0ca678;
+      border: 1px solid #0ca678;
+    }
+    .status-off {
+      background: #ffe3e3;
+      color: #c92a2a;
+      border: 1px solid #c92a2a;
+    }
+    .entreprise-card p {
+      line-height: 1.65;
+      margin-bottom: .65rem;
+    }
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: .85rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .status-ok { background: #0ca678; color: #d3f9d8; }
+      .status-off { background: #c92a2a; color: #ffe3e3; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="ecole.html">École</a></li>
+    <li><a href="entreprises.html" class="active">Entreprises</a></li>
+    <li><a href="projet.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Mes entreprises</h1>
+
+<section>
+  <p>
+    Présentation des entreprises dans lesquelles j'ai effectué mes stages et expériences professionnelles
+    durant ma formation BTS SIO.
+  </p>
+
+  <div class="entreprise-grid">
+
+    <div class="entreprise-card">
+      <div class="entreprise-header">
+        <h3>Groupe SAVE</h3>
+        <span class="status-badge status-off">Contrat terminé</span>
+      </div>
+      <p>
+        <strong>Groupe SAVE</strong> est une SASU basée à Paris, spécialisée dans le commerce de gros
+        de composants et équipements électroniques : vidéosurveillance, contrôle d'accès, protection
+        et énergies renouvelables.
+      </p>
+      <p>
+        L'entreprise comptait entre 10 et 19 salariés et disposait d'un capital social de 100 948 €.
+        Elle est actuellement en liquidation judiciaire depuis février 2025.
+      </p>
+      <div class="info-row">
+        <span class="badge">Commerce électronique</span>
+        <span class="badge">10-19 salariés</span>
+        <span class="badge">Paris</span>
+      </div>
+    </div>
+
+    <div class="entreprise-card">
+      <div class="entreprise-header">
+        <h3>Dis Transport</h3>
+        <span class="status-badge status-ok">Contrat actif</span>
+      </div>
+      <p>
+        <strong>DIS TRANSPORT</strong> est une SASU créée en 2017, immatriculée au RCS de Versailles
+        et implantée à Guyancourt (Yvelines). L'entreprise exerce dans le transport routier de
+        marchandises de proximité, principalement avec des véhicules de plus de 3,5 tonnes.
+      </p>
+      <p>
+        Elle propose également des services de location de véhicules. Dirigée par Waly Diarra,
+        elle compte une trentaine de salariés, ce qui en fait une petite PME du secteur des
+        transports terrestres.
+      </p>
+      <div class="info-row">
+        <span class="badge">Transport routier</span>
+        <span class="badge">32 salariés</span>
+        <span class="badge">Créée en 2017</span>
+        <span class="badge">Guyancourt (78)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Portfolio BTS SIO · OUATTARA DJACK</p>
+</footer>
+
+</body>
+</html>

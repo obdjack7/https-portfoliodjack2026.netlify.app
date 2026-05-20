@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille — Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Garantit que la section veille occupe la même largeur que les autres pages */
+    .veille-section {
+      width: 100%;
+    }
+    .veille-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow .25s, transform .25s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .veille-box:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+    .veille-box .tag-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-glow);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: .85rem;
+    }
+    .veille-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: .6rem;
+      color: var(--text);
+    }
+    .veille-box ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    .veille-box ul li {
+      padding: .4rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .9rem;
+      color: var(--text2);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .veille-box ul li:last-child { border-bottom: none; }
+    .veille-box ul li::before {
+      content: '→';
+      color: var(--accent2);
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="ecole.html">École</a></li>
+    <li><a href="entreprises.html">Entreprises</a></li>
+    <li><a href="projet.html">Projets</a></li>
+    <li><a href="veille.html" class="active">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Veille</h1>
+
+<section class="veille-section">
+  <h2>Veille technologique</h2>
+  <p>Suivi régulier des évolutions technologiques du secteur informatique dans le cadre du BTS SIO.</p>
+
+  <div class="veille-box">
+    <div class="tag-header">💡 Technologique</div>
+    <h3>Ma démarche de veille</h3>
+<p>
+  Dans le cadre de ma veille technologique, je m’intéresse particulièrement aux cyberattaques 
+  utilisant l’intelligence artificielle. L’IA est aujourd’hui exploitée dans différentes formes 
+  d’attaques informatiques, notamment pour automatiser le phishing, créer des malwares plus évolutifs 
+  ou contourner certains systèmes de sécurité. Afin de rester informé des nouvelles menaces et des 
+  évolutions du domaine de la cybersécurité, j’utilise des outils simples et complémentaires pour 
+  suivre régulièrement l’actualité du secteur.
+</p>
+
+<p>
+  Je m’appuie principalement sur <strong>Google Alerts</strong> afin de surveiller des mots-clés liés 
+  aux cyberattaques, aux vulnérabilités et à l’intelligence artificielle. Ces alertes me permettent 
+  de recevoir automatiquement les nouvelles informations dès leur publication. En complément, 
+  j’utilise <strong>Feedly</strong> pour centraliser les flux RSS de plusieurs sites spécialisés en 
+  cybersécurité et en intelligence artificielle, ce qui me permet de consulter rapidement les actualités 
+  importantes en un seul endroit et d’effectuer une veille efficace et organisée.
+</p>
+
+    <h4 style="font-size:.95rem;font-weight:600;color:var(--text);margin:1.25rem 0 .5rem;">Thématiques suivies</h4>
+    <ul>
+      <li>Les Cyber-attaques avec l'IA </li>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Portfolio BTS SIO · OUATTARA DJACK</p>
+</footer>
+
+</body>
+</html>

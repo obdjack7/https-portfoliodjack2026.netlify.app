@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      max-width: 900px;
+      margin: 2.5rem auto 0;
+      padding: 3rem 2rem 2.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 260px; height: 260px;
+      background: radial-gradient(circle, rgba(92,124,250,.18) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-avatar {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: 700; color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(59,91,219,.35);
+    }
+    .hero-text h1 {
+      padding: 0; margin: 0 0 .4rem;
+      font-size: 2rem;
+    }
+    .hero-text p {
+      font-size: .95rem;
+      color: var(--text2);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .hero-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: .85rem;
+    }
+    .nav-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: .5rem;
+    }
+    .nav-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      transition: all .25s;
+      box-shadow: var(--shadow);
+    }
+    .nav-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+      border-color: var(--accent2);
+      opacity: 1;
+    }
+    .nav-card .icon {
+      font-size: 1.5rem;
+      margin-bottom: .25rem;
+    }
+    .nav-card strong {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .nav-card span {
+      font-size: .8rem;
+      color: var(--text3);
+    }
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; text-align: center; padding: 2rem 1.25rem; }
+      .hero-badges { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="ecole.html">École</a></li>
+    <li><a href="entreprises.html">Entreprises</a></li>
+    <li><a href="projet.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-avatar">OD</div>
+  <div class="hero-text">
+    <h1>OUATTARA DJACK</h1>
+    <p>Étudiant en BTS SIO · Administration systèmes &amp; réseaux · Paris</p>
+    <div class="hero-badges">
+      <span class="badge">BTS SIO — 2ᵉ année</span>
+      <span class="badge">Élysées Apprentissage</span>
+      <span class="badge">2024 – 2026</span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>Bienvenue sur mon portfolio</h2>
+  <p>
+    Ce portfolio présente l'ensemble de mes travaux réalisés durant le BTS SIO (2024–2026),
+    incluant ma <strong>veille technologique et juridique</strong>,
+    mes <strong>projets techniques</strong>, ainsi que mon <strong>parcours professionnel et mes compétences</strong>.
+  </p>
+  <div class="nav-cards">
+    <a class="nav-card" href="cv.html">
+      <span class="icon">📄</span>
+      <strong>CV</strong>
+      <span>Compétences &amp; expériences</span>
+    </a>
+    <a class="nav-card" href="ecole.html">
+      <span class="icon">🎓</span>
+      <strong>École</strong>
+      <span>Formation &amp; épreuves BTS SIO</span>
+    </a>
+    <a class="nav-card" href="entreprises.html">
+      <span class="icon">🏢</span>
+      <strong>Entreprises</strong>
+      <span>Save &amp; Dis Transport</span>
+    </a>
+    <a class="nav-card" href="projet.html">
+      <span class="icon">🖥️</span>
+      <strong>Projets</strong>
+      <span>Zabbix, Proxmox, pfSense…</span>
+    </a>
+    <a class="nav-card" href="veille.html">
+      <span class="icon">📡</span>
+      <strong>Veille</strong>
+      <span>Technologique &amp; juridique</span>
+    </a>
+    <a class="nav-card" href="contact.html">
+      <span class="icon">✉️</span>
+      <strong>Contact</strong>
+      <span>Me contacter</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Portfolio BTS SIO · OUATTARA DJACK</p>
+</footer>
+
+</body>
+</html>

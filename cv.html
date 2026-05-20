@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .skill-category {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow .25s, transform .25s;
+    }
+    .skill-category:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    .skill-category > strong {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: .6rem;
+    }
+    .skill-category > strong::before {
+      content: '';
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .skill-category ul {
+      padding-left: 1rem;
+      margin: 0;
+    }
+    .exp-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow .25s;
+    }
+    .exp-item:hover { box-shadow: var(--shadow-lg); }
+    .exp-item strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: .2rem;
+    }
+    .exp-item em {
+      font-style: normal;
+      font-size: .82rem;
+      color: var(--accent2);
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+    .download-box {
+      background: linear-gradient(135deg, #eef1fb 0%, #e8edff 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .download-box p { margin: 0; font-weight: 500; color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="cv.html" class="active">CV</a></li>
+    <li><a href="ecole.html">École</a></li>
+    <li><a href="entreprises.html">Entreprises</a></li>
+    <li><a href="projet.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Mon CV</h1>
+
+<section>
+  <div class="download-box">
+    <p>📄 Mon CV complet en téléchargement</p>
+    <a href="documents/CV à jour.pdf" download>Télécharger le CV</a>
+  </div>
+</section>
+
+<section class="skills-section">
+  <h2>Compétences techniques</h2>
+
+  <div class="skill-category">
+    <strong>Administration systèmes &amp; réseaux</strong>
+    <ul>
+      <li>Windows Server / Active Directory</li>
+      <li>Déploiement et administration d'un contrôleur de domaine</li>
+      <li>Gestion des utilisateurs, groupes et OU</li>
+      <li>Mise en place de GPO (sécurité et gestion des postes)</li>
+      <li>Linux : commandes avancées, services, certification acquise</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <strong>Virtualisation</strong>
+    <ul>
+      <li>Proxmox VE : création et gestion de machines virtuelles</li>
+      <li>Accès à distance aux environnements virtualisés</li>
+      <li>VMware Workstation Pro : environnements de test</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <strong>Réseaux &amp; supervision</strong>
+    <ul>
+      <li>Cisco Packet Tracer : topologies réseau</li>
+      <li>Adressage IP, routage, services réseau</li>
+      <li>Zabbix : supervision de machines et services</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <strong>Maintenance informatique</strong>
+    <ul>
+      <li>Diagnostic et résolution de pannes matérielles</li>
+      <li>Diagnostic et résolution de pannes logicielles</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <strong>Développement &amp; outils</strong>
+    <ul>
+      <li>HTML : pages web statiques</li>
+      <li>Python : bases et scripts simples</li>
+      <li>Microsoft 365 : Word, Excel</li>
+    </ul>
+  </div>
+</section>
+
+<section class="experience-section">
+  <h2>Expériences professionnelles</h2>
+
+  <div class="exp-item">
+    <strong>Technicien en informatique</strong>
+    <em>Gestion du parc informatique</em>
+    <ul style="margin-top:.6rem;">
+      <li>Gestion et maintenance du parc informatique</li>
+      <li>Installation, configuration et mise à jour des postes de travail</li>
+      <li>Diagnostic et résolution des incidents matériels et logiciels</li>
+      <li>Support aux utilisateurs (niveau 1 et 2)</li>
+      <li>Suivi des équipements et interventions</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <strong>Projets réalisés en formation (BTS SIO)</strong>
+    <ul style="margin-top:.6rem;">
+      <li>Mise en place d'un serveur de supervision avec Zabbix</li>
+      <li>Déploiement d'une infrastructure virtualisée avec Proxmox VE</li>
+      <li>Gestion de tickets et du parc informatique via GLPI</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 — Portfolio BTS SIO · OUATTARA DJACK</p>
+</footer>
+
+</body>
+</html>
