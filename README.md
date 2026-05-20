@@ -1,1 +1,1 @@
-# https-portfoliodjack2026.netlify.app-
+# https-portfoliodjack2026.netlify.app
